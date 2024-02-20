@@ -5,23 +5,54 @@
 body{
     font-family: Misans;
     background-color: black;
+    color: white;
 }
 .header{
-  margin-left: 10px;
-  margin-right: 10px;
+  z-index: 1;
+  position: fixed;
+  top: 0;
   background-color: black;
   height: 60px;
+  width: 100%;
   display: flex;
-  align-items: center; /* 将子元素在交叉轴上居中对齐 */  
+  align-items: center; /* 将子元素在交叉轴上居中对齐 */ 
+  padding-left: 15px; 
 }
 .header .items{
   padding: 15px;
 }
-.title{
+.contents{
+  margin-top: 70px;
+}
+.footer{
+  text-align: center;
+}
+hr{
+  height: 1.7px;
+  border: none;
+  background-color: white;
+  color: white;
+}
+.logo{
   cursor: pointer;
   font-size: 30px;
   color: white;
   font-weight: bold;
+}
+.title{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+.subtitle{
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 .btn {
     background-color: transparent;
@@ -89,7 +120,7 @@ body{
     line-height: 1.33333em;
     display: block;
     text-align: left;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s linear;
     text-decoration: none;
     color: white;
   }
@@ -101,6 +132,64 @@ body{
   
   .menuitem:hover .text {
     color: black;
-   
   }
-  
+
+.card {
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  padding: 2rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+  width: 20vw;
+  margin: 10px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/*Image*/
+.avatar-cyng {
+  --size: 60px;
+  background: linear-gradient(to top, #ff6dbb 5%, #1d3bff 90%);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
+}
+.avatar-atgs {
+  --size: 60px;
+  background: linear-gradient(to top, #e4ff6d 5%, #1dffd2 90%);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+/*Text*/
+.card-title {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.card-subtitle {
+  color: #7f7f7f;
+  font-size: 0.8em;
+}
+
+.link{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.link:hover{
+  text-decoration: underline;
+}
+
