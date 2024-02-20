@@ -6,17 +6,19 @@ body{
     font-family: Misans;
     background-color: black;
     color: white;
+    width: 100%;
+    margin: 0 auto;
 }
 .header{
   z-index: 1;
   position: fixed;
   top: 0;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   height: 60px;
-  width: 100%;
   display: flex;
   align-items: center; /* 将子元素在交叉轴上居中对齐 */ 
   padding-left: 15px; 
+  width: 100%;
 }
 .header .items{
   padding: 15px;
@@ -36,13 +38,21 @@ hr{
 .logo{
   cursor: pointer;
   font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.headline{
+  font-size: 50px;
   color: white;
   font-weight: bold;
+  margin-left: 30px;
+  margin-bottom: 0;
 }
 .title{
   font-size: 30px;
   color: white;
   font-weight: bold;
+  margin-top: 0;
   margin-left: 30px;
   margin-bottom: 0;
 }
@@ -99,7 +109,7 @@ hr{
     border: none;
     border-radius: 0;
     box-sizing: border-box;
-    color: #000;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
     font-weight: 700;
@@ -120,18 +130,18 @@ hr{
     line-height: 1.33333em;
     display: block;
     text-align: left;
-    transition: all 0.5s linear;
+    transition: all 0.3s ease-in-out;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   .menuitem:hover {
     color: white;
-    background: white;
+    background: rgb(0, 0, 0);
   }
   
   .menuitem:hover .text {
-    color: black;
+    color: rgb(255, 255, 255);
   }
 
 .card {
