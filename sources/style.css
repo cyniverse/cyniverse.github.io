@@ -29,6 +29,35 @@ body{
 .footer{
   text-align: center;
 }
+.belt{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.forward{
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.forward:hover{
+  background-color: white;
+}
+.forward:hover .title{
+  color: black;
+}
+.forward .icon-light{
+  margin-right: 15px;
+}
+.forward .icon-dark{
+  margin-right: 15px;
+  display: none;
+}
+.forward:hover .icon-light{
+  display: none;
+}
+.forward:hover .icon-dark{
+  display:unset;
+}
 hr{
   height: 1.7px;
   border: none;
@@ -63,6 +92,9 @@ hr{
   margin-left: 30px;
   margin-top: 0;
   margin-bottom: 5px;
+}
+.cards{
+  display: flex;
 }
 .btn {
     background-color: transparent;
@@ -148,11 +180,20 @@ hr{
   cursor: pointer;
   background: rgb(0, 0, 0);
   padding: 2rem 1.5rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   width: 20vw;
   margin: 10px;
 }
-
+.card .card-subtitle{
+  color: #414141;
+}
+.card:hover {
+  background: rgb(255, 255, 255);
+  transform: translateY(-5px);
+}
+.card:hover .card-title{
+  color: #000;
+}
 .card-info {
   display: flex;
   flex-direction: column;
@@ -162,25 +203,13 @@ hr{
 }
 
 /*Image*/
-.avatar-cyng {
+.avatar {
   --size: 60px;
-  background: linear-gradient(to top, #ff6dbb 5%, #1d3bff 90%);
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
-  transition: all 0.3s ease-in-out;
   margin-bottom: 1rem;
 }
-.avatar-atgs {
-  --size: 60px;
-  background: linear-gradient(to top, #e4ff6d 5%, #1dffd2 90%);
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  transition: all 0.3s ease-in-out;
-  margin-bottom: 1rem;
-}
-
 /*Text*/
 .card-title {
   color: #ffffff;
