@@ -2,12 +2,19 @@
   font-family: Misans;
   src: url(/sources/MiSans-Normal.ttf);
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 body{
     font-family: Misans;
     background-color: black;
     color: white;
     width: 100%;
     margin: 0 auto;
+}
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 .header{
   z-index: 1;
@@ -35,6 +42,8 @@ body{
   justify-content: space-between;
 }
 .forward{
+  cursor: pointer;
+  margin: 0;
   background-color: black;
   color: white;
   transition: all 0.3s ease-in-out;
@@ -42,7 +51,7 @@ body{
 .forward:hover{
   background-color: white;
 }
-.forward:hover .title{
+.forward:hover .headline{
   color: black;
 }
 .forward .icon-light{
@@ -75,7 +84,8 @@ hr{
   color: white;
   font-weight: bold;
   margin-left: 30px;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .title{
   font-size: 30px;
